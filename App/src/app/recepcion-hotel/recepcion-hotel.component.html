@@ -1,58 +1,126 @@
 <div class="row">
 
   <form action="">
-  <div class="content" align="center">
-    <div class="col-sm-8">
-      <h1><img style="text-align: center; margin-top: 50px; margin-bottom: 50px"align="center" src="/assets/recepcion.png" alt="recepcion" height="100" width="100">&nbsp;RECEPCION DE HOTEL</h1>
+    <div class="content titulo" align="center">
+      <div class="col-sm-8">
+        <h1><img style="text-align: center; margin-top: 50px; margin-bottom: 50px"align="center" src="/assets/recepcion.png" alt="recepcion" height="100" width="100">&nbsp;RECEPCION DE HOTEL</h1>
       </div>
     </div>
-<div class="textoprincipal" align="center">
-    <h4 >Reservar con nosotros es simple y fácil. Sólo complete el formulario de reserva aquí debajo y le enviaremos un email con el itinerario
-      <br> y los detalles de pago.
+    <div class="col-sm-11" align="center">
+      <h4 >Reservar con nosotros es simple y fácil. Sólo complete el formulario de reserva aquí debajo y le enviaremos un email con el itinerario y los detalles de pago.
       Por favor, no olvide que debe efectuar el pago de su reserva dentro de las 24 horas de realizada la misma. </h4>
-
-</div>
-    <br>
-    <br>
-
-    <div class="col-sm-6" align="center">
-      <h2>DATOS PERSONALES</h2>
-      <label style="text-align: left;">NOMBRE COMPLETO</label><br>
-      <br>
-      <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Ingrese el nombre" name="nombre">&nbsp;
-      <input type="text" class="form-control" placeholder="Ingrese su apellido" name="apellido">
-
-    <br>
-      <br>
-      <label>EMAIL</label><br><br>
-      <div class="col-sm-10"><input type="email" class="form-control"  placeholder="Ingrese su correo" name="correo" ></div>
-      <br>
-      <br>
-      <label >TELEFONO</label>
-      <br>
-      <input type="text" class="form-control" placeholder="Ingrese su celular" name="celular">&nbsp;
-      <input type="text" class="form-control" placeholder="Ingrese su telefono convencional" name="telefono" >
-      <br>
-      <br>
-      <br>
     </div>
-    <div class="col-sm-12">
-      <br>
-      <br>
-<h2>DATOS DE RESERVA</h2>
-      <label >FECHA DE SALIDA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;HORA</label>
-      <br>
-      <input type="text" class="form-control"  placeholder="DD/MM/AA">&nbsp;
-      <input type="text" class="form-control"  placeholder="DD/MM/AA">
+    <br>
+    <br>
 
+    <div class="row datos">
+      <h2>DATOS PERSONALES</h2>
       <br>
+      <div class="col-sm-12">
+        <label style="text-align: left;">Nombre completo</label>
+      </div>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Ingrese su nombre" name="nombre">
+      </div>
+      <div class="col-sm-6">
+          <input type="text" class="form-control" placeholder="Ingrese su apellido" name="apellido">
+      </div>
+    </div>
+    <div class="row datos2">
+      <div class="col-sm-12">
+        <br><label>Email</label><br>
+      </div>
+      <div class="col-sm-8">
+        <input type="email" class="form-control"  placeholder="Ingrese su correo" name="correo">
+      </div>
+    </div>
+
+    <div class="row datos3">
+      <div class="col-sm-8">
+        <br><label >Telefono</label>
+        <br>
+      </div>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" placeholder="Ingrese su celular" name="celular"></div>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" placeholder="Ingrese su telefono convencional" name="telefono" >
+      </div>
+    </div>
+    <div class="row reserva">
+
+      <div class="col-sm-12">
+        <h2>DATOS DE RESERVA</h2></div>
+      <div class="col-sm-6">
+      <label >Fecha de salida</label>
+      </div>
+      <div class="col-sm-6 ">
+        <label >Hora</label>
+      </div>
       <br>
-      <br>
-      <label >FECHA DE RETORNO &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; HORA</label>
-      <br>
-      <input type="text" class="form-control"  placeholder="DD/MM/AA">&nbsp;
-      <input type="text" class="form-contro"  placeholder="HH/MM/AA">
-      <input type="text" class="form-control"  placeholder="DD/MM/AA">
+      <div class="col-sm-6 ">
+      <input type="text" class="form-control"  placeholder="DD/MM/AA"></div>
+      <div class="col-sm-3">
+      <input type="text" class="form-control"  placeholder="mm/hh"></div>
+      <div class="col-sm-3">
+        <input type="text" class="form-control"  placeholder="mm/hh"></div>
+    </div>
+    <div class="row reserva1">
+      <div class="col-sm-6">
+        <br><label >Fecha de retorno</label>
+      </div>
+      <div class="col-sm-6">
+        <label >Hora</label>
+      </div>
+
+      <div class="col-sm-6">
+        <input type="text" class="form-control"  placeholder="DD/MM/AA"></div>
+      <div class="col-sm-2">
+        <input type="text" class="form-control"  placeholder="mm/hh"></div>
+      <div class="col-sm-2">
+        <input type="text" class="form-control"  placeholder="mm/hh"></div>
+    </div>
+    <div class="row reserva2">
+      <div class="col-sm-12">
+        <br><label >Numero de huespedes/pasajeros</label>
+      </div>
+      <div class="col-sm-12">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Numeros
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">1</a>
+            <a class="dropdown-item" href="#">2</a>
+            <a class="dropdown-item" href="#">3</a>
+            <a class="dropdown-item" href="#">4</a>
+            <a class="dropdown-item" href="#">5</a>
+            <a class="dropdown-item" href="#">6</a>
+            <a class="dropdown-item" href="#">7</a>
+            <a class="dropdown-item" href="#">8</a>
+            <a class="dropdown-item" href="#">9</a>
+            <a class="dropdown-item" href="#">10</a>
+            <a class="dropdown-item" href="#">11</a>
+            <a class="dropdown-item" href="#">12</a>
+          </div>
+        </div>
+      </div>
+      <div style="padding-top: 2rem"></div>
+
+      <div class="col-sm-12">
+        <br>
+        <label >Tipo de habitacion</label>
+      </div>
+      <div class="col-sm-3">
+        <input type="radio" name="group1" value="Milk"> Economica<br>
+      </div>
+      <div class="col-sm-3">
+        <input type="radio" name="group1" value="Milk"> Premiun<br>
+      </div>
+      <div class="col-sm-3">
+        <input type="radio" name="group1" value="Milk"> Deluxe<br>
+      </div>
+      <div class="col-sm-3">
+        <input type="radio" name="group1" value="Milk"> Bussiness<br>
+      </div>
     </div>
   </form>
 </div>
