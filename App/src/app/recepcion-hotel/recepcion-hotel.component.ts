@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recepcion-hotel.component.css']
 })
 export class RecepcionHotelComponent implements OnInit {
+  numbers = ['1', '2', '3', '4'];
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
+
 
 }
