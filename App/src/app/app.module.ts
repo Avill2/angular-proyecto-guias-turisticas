@@ -7,6 +7,8 @@ import { RecepcionRestauranteComponent } from './recepcion-restaurante/recepcion
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { ForgotpassComponent } from './forgotpass/forgotpass.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { SeleccionComponent } from './seleccion/seleccion.component';
 
 
 @NgModule({
@@ -17,6 +19,8 @@ import { ForgotpassComponent } from './forgotpass/forgotpass.component';
     LoginComponent,
     RegistroComponent,
     ForgotpassComponent,
+    InicioComponent,
+    SeleccionComponent,
 
   ],
   imports: [
