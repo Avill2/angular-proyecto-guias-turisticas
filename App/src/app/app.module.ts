@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { RecepcionHotelComponent } from './recepcion-hotel/recepcion-hotel.component';
 import { RecepcionRestauranteComponent } from './recepcion-restaurante/recepcion-restaurante.component';
 import { LoginComponent } from './login/login.component';
+import { RegistroComponent } from './registro/registro.component';
+import { ForgotpassComponent } from './forgotpass/forgotpass.component';
 
 
 @NgModule({
@@ -13,6 +15,8 @@ import { LoginComponent } from './login/login.component';
     RecepcionHotelComponent,
     RecepcionRestauranteComponent,
     LoginComponent,
+    RegistroComponent,
+    ForgotpassComponent,
 
   ],
   imports: [
