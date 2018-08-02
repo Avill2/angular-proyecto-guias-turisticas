@@ -9,6 +9,8 @@ import { RegistroComponent } from './registro/registro.component';
 import { ForgotpassComponent } from './forgotpass/forgotpass.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { SeleccionComponent } from './seleccion/seleccion.component';
+import {Router, RouterModule} from "@angular/router";
+import {routes} from "./app.routes";
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { SeleccionComponent } from './seleccion/seleccion.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    FormsModule,RouterModule.forRoot(routes,
+      {
+        useHash: false})
   ],
   providers: [
   ],
