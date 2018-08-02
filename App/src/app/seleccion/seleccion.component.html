@@ -1,3 +1,91 @@
-<p>
-  seleccion works!
-</p>
+<div class="fondo1">
+
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-2.5">
+      <p class="perfiles"><a href="https://pam.quito.gob.ec/PAM/Inicio.aspx?Begin=Login" style="color:#28342f">Inicio
+      </a>
+        <br>
+        <a href="https://pam.quito.gob.ec/PAM/Inicio.aspx?Begin=Login" style="color:#28342f">Acerca de Nosotros
+        </a>
+        <br>
+        <a href="https://pam.quito.gob.ec/PAM/Inicio.aspx?Begin=Login" style="color:#28342f">Lugares Turísticos
+        </a>
+        <br>
+        <a href="https://pam.quito.gob.ec/PAM/Inicio.aspx?Begin=Login" style="color:#28342f">Mapas
+        </a>
+      </p>
+    </div>
+    <div class="col-sm-6"> </div>
+    <div class="col-sm-1">
+      <p class="botones2"><a href="https://pam.quito.gob.ec/PAM/Inicio.aspx?Begin=Login">Login
+      </a>
+    </div>
+    |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="col-sm-1.2">
+      <p class="botones2"><a href="https://pam.quito.gob.ec/PAM/Inicio.aspx?Begin=Login">Sign Up
+      </a>
+    </div>
+
+    <div class="col-sm-1"></div>
+
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <h2 class="titulo">Guía Turística del Ecuador</h2>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8"
+
+         *ngFor="let usuario of imagenEcuador"
+    >
+      <app-inicio
+        [texto]="usuario.texto"
+        [imagen]="usuario.imagen"
+      >
+      </app-inicio>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1"
+
+         *ngFor="let usuario of imagenContactenos"
+    >
+      <app-inicio
+        [imagen]="usuario.imagen"
+      >
+      </app-inicio>
+    </div>
+    &nbsp;
+    <div class="col-sm-1">
+      <p class="perfiles2">E-mail</p>
+      <p class="perfiles2">Comentarios</p>
+    </div>
+
+    <div class="col-sm-1.6">
+      <p><textarea name="comentarios" rows="1"></textarea>
+      </p>
+
+      <p><textarea name="comentarios2" rows="5"></textarea>
+      </p>
+    </div>
+
+    <div class="col-sm-1">
+      <br><br><br> <br> <br> <br>
+      <p class="perfiles">Enviar</p>
+
+    </div>
+    <div class="col-sm-6"></div>
+
+  </div>

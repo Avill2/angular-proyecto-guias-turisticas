@@ -1,25 +1,27 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { TestBed, async } from '@angular/core/testing';
 import { SeleccionComponent } from './seleccion.component';
-
 describe('SeleccionComponent', () => {
-  let component: SeleccionComponent;
-  let fixture: ComponentFixture<SeleccionComponent>;
-
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SeleccionComponent ]
-    })
-    .compileComponents();
+      declarations: [
+        SeleccionComponent
+      ],
+    }).compileComponents();
   }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(SeleccionComponent);
-    component = fixture.componentInstance;
+  it('should create the app', async(() => {
+    const fixture = TestBed.createComponent(SeleccionComponent);
+    const app = fixture.debugElement.componentInstance;
+    expect(app).toBeTruthy();
+  }));
+  it(`should have as title 'app'`, async(() => {
+    const fixture = TestBed.createComponent(SeleccionComponent);
+    const app = fixture.debugElement.componentInstance;
+    expect(app.title).toEqual('app');
+  }));
+  it('should render title in a h1 tag', async(() => {
+    const fixture = TestBed.createComponent(SeleccionComponent);
     fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to App!');
+  }));
 });
