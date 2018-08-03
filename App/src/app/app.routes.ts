@@ -6,6 +6,9 @@ import {RegistroComponent} from "./registro/registro.component";
 import {SeleccionComponent} from "./seleccion/seleccion.component";
 import {RecepcionRestauranteComponent} from './recepcion-restaurante/recepcion-restaurante.component';
 import {CostaComponent} from './costa/costa.component';
+import {SierraComponent} from './sierra/sierra.component';
+import {OrienteComponent} from './oriente/oriente.component';
+import {GalapagosComponent} from './galapagos/galapagos.component';
 
 
 export const routes: Routes = [
@@ -28,7 +31,16 @@ export const routes: Routes = [
   {
     path: 'costa',
     component: CostaComponent},
+  {
+    path: 'sierra',
+    component: SierraComponent},
 
+  {
+    path: 'oriente',
+    component: OrienteComponent},
+  {
+    path: 'galapagos',
+    component: GalapagosComponent},
   {
     path: '**',
     redirectTo :'login'

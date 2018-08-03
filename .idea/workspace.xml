@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07dc4c8e-0dc0-4198-a42c-1ef73a13e9e7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/app.component.css" afterPath="$PROJECT_DIR$/App/src/app/app.component.css" />
       <change beforePath="$PROJECT_DIR$/App/src/app/app.component.html" afterPath="$PROJECT_DIR$/App/src/app/app.component.html" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/app.module.ts" afterPath="$PROJECT_DIR$/App/src/app/app.module.ts" />
       <change beforePath="$PROJECT_DIR$/App/src/app/app.routes.ts" afterPath="$PROJECT_DIR$/App/src/app/app.routes.ts" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/inicio/inicio.component.html" afterPath="$PROJECT_DIR$/App/src/app/inicio/inicio.component.html" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/registro/registro.component.html" afterPath="$PROJECT_DIR$/App/src/app/registro/registro.component.html" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/seleccion/seleccion.component.html" afterPath="$PROJECT_DIR$/App/src/app/seleccion/seleccion.component.html" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/seleccion/seleccion.component.ts" afterPath="$PROJECT_DIR$/App/src/app/seleccion/seleccion.component.ts" />
+      <change beforePath="$PROJECT_DIR$/App/src/app/galapagos/galapagos.component.html" afterPath="$PROJECT_DIR$/App/src/app/galapagos/galapagos.component.html" />
+      <change beforePath="$PROJECT_DIR$/App/src/app/recepcion-hotel/recepcion-hotel.component.html" afterPath="$PROJECT_DIR$/App/src/app/recepcion-hotel/recepcion-hotel.component.html" />
+      <change beforePath="$PROJECT_DIR$/App/src/app/recepcion-restaurante/recepcion-restaurante.component.html" afterPath="$PROJECT_DIR$/App/src/app/recepcion-restaurante/recepcion-restaurante.component.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,6 +20,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="recepcion-restaurante.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/src/app/recepcion-restaurante/recepcion-restaurante.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recepcion-hotel.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/src/app/recepcion-hotel/recepcion-hotel.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="128" column="29" lean-forward="false" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="inicio.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/src/app/inicio/inicio.component.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -36,33 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seleccion.component.spec.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/app/seleccion/seleccion.component.spec.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inicio.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/app/inicio/inicio.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+            <state relative-caret-position="333">
+              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#div#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -80,11 +74,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="costa.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="costa.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/src/app/costa/costa.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="82" column="18" lean-forward="false" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
+            <state relative-caret-position="326">
+              <caret line="85" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#1;n#form#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#4;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#5;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="galapagos.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/src/app/galapagos/galapagos.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="86" column="95" lean-forward="true" selection-start-line="86" selection-start-column="95" selection-end-line="86" selection-end-column="95" />
               <folding>
                 <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#div#1;n#form#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -100,8 +111,8 @@
       <file leaf-file-name="login.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/src/app/login/login.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2136">
-              <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+            <state relative-caret-position="47">
+              <caret line="53" column="75" lean-forward="true" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -110,8 +121,8 @@
       <file leaf-file-name="app.routes.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/src/app/app.routes.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="296">
+              <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -124,13 +135,6 @@
               <caret line="65" column="23" lean-forward="false" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contactenos_opt.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/assets/contactenos_opt.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -172,8 +176,6 @@
         <option value="$PROJECT_DIR$/App/src/index.html" />
         <option value="$PROJECT_DIR$/App/src/app/recepcion-hotel/recepcion-hotel.component.css" />
         <option value="$PROJECT_DIR$/App/src/app/login/login.component.html" />
-        <option value="$PROJECT_DIR$/App/src/app/recepcion-hotel/recepcion-hotel.component.html" />
-        <option value="$PROJECT_DIR$/App/src/app/recepcion-restaurante/recepcion-restaurante.component.html" />
         <option value="$PROJECT_DIR$/App/src/app/forgotpass/forgotpass.component.html" />
         <option value="$PROJECT_DIR$/App/src/app/registro/registro.component.html" />
         <option value="$PROJECT_DIR$/App/src/app/registro/registro.component.css" />
@@ -181,9 +183,12 @@
         <option value="$PROJECT_DIR$/App/src/app/seleccion/seleccion.component.ts" />
         <option value="$PROJECT_DIR$/App/src/app/inicio/inicio.component.html" />
         <option value="$PROJECT_DIR$/App/src/app/seleccion/seleccion.component.html" />
+        <option value="$PROJECT_DIR$/App/src/app/costa/costa.component.html" />
+        <option value="$PROJECT_DIR$/App/src/app/galapagos/galapagos.component.html" />
         <option value="$PROJECT_DIR$/App/src/app/app.routes.ts" />
         <option value="$PROJECT_DIR$/App/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/App/src/app/costa/costa.component.html" />
+        <option value="$PROJECT_DIR$/App/src/app/recepcion-restaurante/recepcion-restaurante.component.html" />
+        <option value="$PROJECT_DIR$/App/src/app/recepcion-hotel/recepcion-hotel.component.html" />
       </list>
     </option>
   </component>
@@ -283,6 +288,14 @@
               <item name="angular-proyecto-guias-turisticas" type="462c0819:PsiDirectoryNode" />
               <item name="App" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="recepcion-hotel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angular-proyecto-guias-turisticas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular-proyecto-guias-turisticas" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -353,12 +366,12 @@
       <workItem from="1533246478926" duration="300000" />
       <workItem from="1533247746436" duration="1028000" />
       <workItem from="1533256383608" duration="985000" />
-      <workItem from="1533267238475" duration="11788000" />
+      <workItem from="1533267238475" duration="13219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56234000" />
+    <option name="totallyTimeSpent" value="57665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -397,7 +410,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App/src/app/user/user-new/user-new.component.html" />
     <entry file="file://$PROJECT_DIR$/App/src/app/user/user-new/user-new.component.spec.ts" />
     <entry file="file://$PROJECT_DIR$/App/src/app/user/user-new/user-new.component.ts" />
     <entry file="file://$PROJECT_DIR$/App/src/app/user/user.component.ts" />
@@ -470,14 +482,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/app/recepcion-hotel/recepcion-hotel.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/src/app/forgotpass/forgotpass.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -523,14 +527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/app/recepcion-restaurante/recepcion-restaurante.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="6" column="125" lean-forward="false" selection-start-line="6" selection-start-column="102" selection-end-line="6" selection-end-column="125" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/src/app/app.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -544,7 +540,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#56#0" expanded="true" />
+            <element signature="e#0#56#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -593,24 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/app/app.routes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/src/app/inicio/inicio.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="592">
@@ -621,18 +599,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/app/login/login.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2136">
-          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/src/app/costa/costa.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="82" column="18" lean-forward="false" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
+        <state relative-caret-position="326">
+          <caret line="85" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#div#1;n#form#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -641,6 +611,63 @@
             <element signature="n#style#0;n#label#0;n#div#4;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#div#5;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/app/galapagos/galapagos.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="86" column="95" lean-forward="true" selection-start-line="86" selection-start-column="95" selection-end-line="86" selection-end-column="95" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#1;n#form#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#4;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#5;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/app/app.routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/app/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="53" column="75" lean-forward="true" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/app/recepcion-restaurante/recepcion-restaurante.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/app/recepcion-hotel/recepcion-hotel.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="128" column="29" lean-forward="false" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
