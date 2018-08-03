@@ -11,6 +11,10 @@ import { InicioComponent } from './inicio/inicio.component';
 import { SeleccionComponent } from './seleccion/seleccion.component';
 import {Router, RouterModule} from "@angular/router";
 import {routes} from "./app.routes";
+import { CostaComponent } from './costa/costa.component';
+import { SierraComponent } from './sierra/sierra.component';
+import { OrienteComponent } from './oriente/oriente.component';
+import { GalapagosComponent } from './galapagos/galapagos.component';
 
 
 @NgModule({
@@ -23,6 +27,10 @@ import {routes} from "./app.routes";
     ForgotpassComponent,
     InicioComponent,
     SeleccionComponent,
+    CostaComponent,
+    SierraComponent,
+    OrienteComponent,
+    GalapagosComponent,
 
   ],
   imports: [
