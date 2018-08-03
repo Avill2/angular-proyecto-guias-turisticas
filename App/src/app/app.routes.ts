@@ -19,8 +19,7 @@ export const routes: Routes = [
   {
     path: 'registro',
     component: RegistroComponent},
-
   {
     path: '**',
     redirectTo :'login'
-  }
+  }]
