@@ -15,6 +15,7 @@ import { CostaComponent } from './costa/costa.component';
 import { SierraComponent } from './sierra/sierra.component';
 import { OrienteComponent } from './oriente/oriente.component';
 import { GalapagosComponent } from './galapagos/galapagos.component';
+import { ReconocimientoFacialComponent } from './reconocimiento-facial/reconocimiento-facial.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { GalapagosComponent } from './galapagos/galapagos.component';
     SierraComponent,
     OrienteComponent,
     GalapagosComponent,
+    ReconocimientoFacialComponent,
 
   ],
   imports: [
