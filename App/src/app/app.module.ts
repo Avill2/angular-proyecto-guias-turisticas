@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ApplicationRef } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 import { RecepcionHotelComponent } from './recepcion-hotel/recepcion-hotel.component';
 import { RecepcionRestauranteComponent } from './recepcion-restaurante/recepcion-restaurante.component';
@@ -11,6 +12,8 @@ import { InicioComponent } from './inicio/inicio.component';
 import { SeleccionComponent } from './seleccion/seleccion.component';
 import {Router, RouterModule} from "@angular/router";
 import {routes} from "./app.routes";
+import {AgmCoreModule} from "@agm/core";
+import { MapaComponent } from './mapa/mapa.component';
 
 
 @NgModule({
@@ -23,14 +26,22 @@ import {routes} from "./app.routes";
     ForgotpassComponent,
     InicioComponent,
     SeleccionComponent,
+    MapaComponent,
 
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     FormsModule,RouterModule.forRoot(routes,
       {
-        useHash: false})
+        useHash: false}),
+
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyD52rv9unYCRqCyfP92hTjHF6XGuMgicSI'
+    })
+
   ],
+
   providers: [
   ],
   bootstrap: [AppComponent]

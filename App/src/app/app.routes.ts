@@ -4,6 +4,7 @@ import {LoginComponent} from "./login/login.component";
 import {RecepcionHotelComponent} from "./recepcion-hotel/recepcion-hotel.component";
 import {RegistroComponent} from "./registro/registro.component";
 import {SeleccionComponent} from "./seleccion/seleccion.component";
+import {MapaComponent} from "./mapa/mapa.component";
 
 
 export const routes: Routes = [
@@ -19,8 +20,11 @@ export const routes: Routes = [
   {
     path: 'registro',
     component: RegistroComponent},
-
+  {
+    path: 'mapa',
+    component: MapaComponent},
   {
     path: '**',
     redirectTo :'login'
   }
+]
