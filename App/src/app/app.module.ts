@@ -37,7 +37,7 @@ import { MapaComponent } from './mapa/mapa.component';
         useHash: false}),
 
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyD52rv9unYCRqCyfP92hTjHF6XGuMgicSI'
+      apiKey: 'AIzaSyD9hY-K4ajBjTRTwe0yp51DtyWf3tPydpk'
     })
 
   ],
