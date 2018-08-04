@@ -1,70 +1,31 @@
 <div class="fondo1">
-
-  <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-2.5">
-      <p class="perfiles"><a href="https://pam.quito.gob.ec/PAM/Inicio.aspx?Begin=Login" style="color:#28342f">Inicio
-      </a>
-        <br>
-        <a href="https://pam.quito.gob.ec/PAM/Inicio.aspx?Begin=Login" style="color:#28342f">Acerca de Nosotros
-        </a>
-        <br>
-        <a href="https://pam.quito.gob.ec/PAM/Inicio.aspx?Begin=Login" style="color:#28342f">Lugares Turísticos
-        </a>
-        <br>
-        <a href="https://pam.quito.gob.ec/PAM/Inicio.aspx?Begin=Login" style="color:#28342f">Mapas
-        </a>
-      </p>
-    </div>
-    <div class="col-sm-6"> </div>
-    <div class="col-sm-1">
-      <p class="botones2"><a href="https://pam.quito.gob.ec/PAM/Inicio.aspx?Begin=Login">Login
+  <div class="row" >
+    <div class="col-sm-12" align="right">
+      <p class="botones2"><a href="http://localhost:4200/login">Login
       </a>
     </div>
-    |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <div class="col-sm-1.2">
-      <p class="botones2"><a href="https://pam.quito.gob.ec/PAM/Inicio.aspx?Begin=Login">Sign Up
-      </a>
-    </div>
-
-    <div class="col-sm-1"></div>
-
   </div>
 
-
-
-  <div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-      <h2 class="titulo">Guía Turística del Ecuador</h2>
-    </div>
-    <div class="col-sm-2"></div>
-  </div>
   <br>
   <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8"
-
-         *ngFor="let usuario of imagenEcuador"
-    >
+         *ngFor="let usuario of imagenEcuador">
       <app-inicio
         [texto]="usuario.texto"
         [imagen]="usuario.imagen"
       >
       </app-inicio>
+      <iframe width="460" height="315" src="https://www.youtube.com/embed/85MppyLJHz0"  allowfullscreen></iframe>
     </div>
+    <br><br>
     <div class="col-sm-2"></div>
   </div>
-  <br><br>
   <div class="row">
-    <div class="col-sm-1"></div>
     <div class="col-sm-1"
-
-         *ngFor="let usuario of imagenContactenos"
-    >
+         *ngFor="let usuario of imagenContactenos">
       <app-inicio
-        [imagen]="usuario.imagen"
-      >
+        [imagen]="usuario.imagen">
       </app-inicio>
     </div>
     &nbsp;
@@ -89,3 +50,4 @@
     <div class="col-sm-6"></div>
 
   </div>
+</div>
