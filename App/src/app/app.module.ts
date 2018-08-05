@@ -15,7 +15,8 @@ import { CostaComponent } from './costa/costa.component';
 import { SierraComponent } from './sierra/sierra.component';
 import { OrienteComponent } from './oriente/oriente.component';
 import { GalapagosComponent } from './galapagos/galapagos.component';
-import { ReconocimientoFacialComponent } from './reconocimiento-facial/reconocimiento-facial.component';
+
+import {SpeechRecognitionService} from './speech-recognition.service';
 
 
 @NgModule({
@@ -32,7 +33,6 @@ import { ReconocimientoFacialComponent } from './reconocimiento-facial/reconocim
     SierraComponent,
     OrienteComponent,
     GalapagosComponent,
-    ReconocimientoFacialComponent,
 
   ],
   imports: [
@@ -42,6 +42,7 @@ import { ReconocimientoFacialComponent } from './reconocimiento-facial/reconocim
         useHash: false})
   ],
   providers: [
+    SpeechRecognitionService
   ],
   bootstrap: [AppComponent]
 })

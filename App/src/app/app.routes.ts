@@ -9,6 +9,7 @@ import {CostaComponent} from './costa/costa.component';
 import {SierraComponent} from './sierra/sierra.component';
 import {OrienteComponent} from './oriente/oriente.component';
 import {GalapagosComponent} from './galapagos/galapagos.component';
+import {ForgotpassComponent} from './forgotpass/forgotpass.component';
 
 
 export const routes: Routes = [
@@ -41,6 +42,9 @@ export const routes: Routes = [
   {
     path: 'galapagos',
     component: GalapagosComponent},
+  {
+    path: 'forgotpass',
+    component: ForgotpassComponent},
   {
     path: '**',
     redirectTo :'login'
