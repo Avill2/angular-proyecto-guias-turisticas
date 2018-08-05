@@ -17,6 +17,7 @@ import { OrienteComponent } from './oriente/oriente.component';
 import { GalapagosComponent } from './galapagos/galapagos.component';
 
 import {SpeechRecognitionService} from './speech-recognition.service';
+import { ResetpassComponent } from './resetpass/resetpass.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import {SpeechRecognitionService} from './speech-recognition.service';
     SierraComponent,
     OrienteComponent,
     GalapagosComponent,
+    ResetpassComponent,
 
   ],
   imports: [
