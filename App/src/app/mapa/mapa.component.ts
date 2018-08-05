@@ -14,6 +14,11 @@ export class MapaComponent implements OnInit {
   lat: number = -0.1865938;
   lng: number = -78.570625;
 
+    //valores
+  markerName: string;
+  markerLat: string;
+  markerLng: string;
+  markerDraggable: string;
   //Marcadores
   markers: marker[] = [
     {
@@ -66,6 +71,26 @@ export class MapaComponent implements OnInit {
       }
       var newLat = $event.coords.lat;
       var newLng = $event.coords.lng;
+    }
+
+    addMarker(){
+    console.log("Adding Marker");
+    if(this.markerDraggable == 'yes'){
+      var isDraggable = true;
+
+    }else{
+      var isDraggable = false;
+
+    }
+
+    var newMarker = {
+      name:this.markerName,
+      lat: parseFloat(this.markerLat),
+      lng: parseFloat(this.markerLng),
+      draggable: isDraggable
+    }
+
+    this.markers.push(newMarker);
     }
 
 
