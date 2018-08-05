@@ -1,4 +1,4 @@
-<h1>{{"Mapa"}}</h1>
+<h1 xmlns="http://www.w3.org/1999/html">{{"Mapa"}}</h1>
 
 <!-- this creates a google map on the page with the given lat/lng from -->
 <!-- the component as the initial center of the map: -->
@@ -19,6 +19,8 @@
   >
     <agm-info-window>
       <strong>{{m.name}}</strong>
+      <br>
+      <a  style="color: red" class="delete" (click)="removeMarker(m)">Borrar Ubicación</a>
     </agm-info-window>
 
   </agm-marker>
