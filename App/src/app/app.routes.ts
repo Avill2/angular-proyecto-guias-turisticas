@@ -10,6 +10,7 @@ import {SierraComponent} from './sierra/sierra.component';
 import {OrienteComponent} from './oriente/oriente.component';
 import {GalapagosComponent} from './galapagos/galapagos.component';
 import {ForgotpassComponent} from './forgotpass/forgotpass.component';
+import {ResetpassComponent} from './resetpass/resetpass.component';
 
 
 export const routes: Routes = [
@@ -45,6 +46,9 @@ export const routes: Routes = [
   {
     path: 'forgotpass',
     component: ForgotpassComponent},
+  {
+    path: 'resetpass',
+    component: ResetpassComponent},
   {
     path: '**',
     redirectTo :'login'
