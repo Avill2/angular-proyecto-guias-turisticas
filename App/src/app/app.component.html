@@ -1,65 +1,35 @@
-
-<div class="container">
- <!--<app-seleccion
- ></app-seleccion>
--->
-
   <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      body {margin: 0;}
-
-      ul.topnav {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-      }
-
-      ul.topnav li {float: left;}
-
-      ul.topnav li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-
-      ul.topnav li a:hover:not(.active) {background-color: #111;}
-
-      ul.topnav li a.active {background-color: #4CAF50;}
-
-      ul.topnav li.right {float: right;}
-
-      @media screen and (max-width: 600px){
-        ul.topnav li.right,
-        ul.topnav li {float: none;}
-      }
-    </style>
   </head>
+  <div class="container">
   <body>
-
-  <ul class="topnav">
-    <li><a class="active" href="inicio">Home</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="recepcion-hotel">Recepción Hotel</a></li>
-    <li><a href="recepcion-restaurante">Recepción Restaurante</a></li>
-    <li class="right"><a href="login">Sobre Nosotros</a></li>
-  </ul>
-
-  <div style="padding:0 16px;">
-    <h2>ALL YOU NEED IS ECUADOR</h2>
-    <p>Guía Turística</p>
-
+  <div class="row">
+    <div class="col-sm-12">
+      <img src="/assets/album.png" alt="" align="center">
   </div>
-
+  </div>
+  <br>
+<br>
+  <ul id="menu">
+    <li><a class="active" href="inicio">Home</a></li>
+    <li><a  href="#">Lugares Turisticos</a>
+      <ul>
+        <li><a  href="costa">Costa</a></li>
+        <li><a  href="sierra">Sierra</a></li>
+        <li><a  href="oriente">Oriente</a></li>
+        <li><a  href="galapagos">Galapagos</a></li>
+      </ul>
+    </li>
+    <li><a  href="recepcion-hotel">Recepción Hotel</a></li>
+    <li><a  href="recepcion-restaurante">Recepción Restaurante</a></li>
+  </ul>
+  <br><br>
+  <div style="padding:0 16px; text-align: center">
+    <br><h2>ALL YOU NEED IS ECUADOR</h2>
+  </div>
   </body>
+  </div>
   </html>
-
-</div>
-
 <router-outlet></router-outlet>
+
 

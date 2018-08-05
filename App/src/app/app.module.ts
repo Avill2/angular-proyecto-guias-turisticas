@@ -12,8 +12,18 @@ import { InicioComponent } from './inicio/inicio.component';
 import { SeleccionComponent } from './seleccion/seleccion.component';
 import {Router, RouterModule} from "@angular/router";
 import {routes} from "./app.routes";
+
 import {AgmCoreModule} from "@agm/core";
 import { MapaComponent } from './mapa/mapa.component';
+
+import { CostaComponent } from './costa/costa.component';
+import { SierraComponent } from './sierra/sierra.component';
+import { OrienteComponent } from './oriente/oriente.component';
+import { GalapagosComponent } from './galapagos/galapagos.component';
+
+import {SpeechRecognitionService} from './speech-recognition.service';
+import { ResetpassComponent } from './resetpass/resetpass.component';
+
 
 
 @NgModule({
@@ -26,7 +36,15 @@ import { MapaComponent } from './mapa/mapa.component';
     ForgotpassComponent,
     InicioComponent,
     SeleccionComponent,
+
     MapaComponent,
+
+    CostaComponent,
+    SierraComponent,
+    OrienteComponent,
+    GalapagosComponent,
+    ResetpassComponent,
+
 
   ],
   imports: [
@@ -43,6 +61,7 @@ import { MapaComponent } from './mapa/mapa.component';
   ],
 
   providers: [
+    SpeechRecognitionService
   ],
   bootstrap: [AppComponent]
 })
