@@ -1,0 +1,54 @@
+import {Injectable} from '@angular/core';
+import {Init} from '../init-markers';
+
+@Injectable()
+export class MarkerService extends Init{
+  constructor(){
+    super();
+    console.log('MarkerService Inicializado...');
+    this.load();
+  }
+
+  getMarkers(){
+    var markers = JSON.parse(localStorage.getItem('markers'));
+    return markers;
+  }
+
+  addMarker(newMarker){
+    //Adjuntar marcadores
+    var markers = JSON.parse(localStorage.getItem('markers'));
+    //Ingresarlo en el array
+    markers.push(newMarker);
+    localStorage.setItem('markers', JSON.stringify(markers));
+  }
+
+  updateMarker(marker, newLat, newLng) {
+    //Adjuntar marcadores
+
+    var markers = JSON.parse(localStorage.getItem('markers'));
+
+    for (var i = 0; i < markers.length; i++) {
+      if (marker.lat == markers[i].lat && marker.lng == markers[i].lng) {
+        markers[i].lat = newLat;
+        markers[i].lng = newLng;
+
+      }
+    }
+    localStorage.setItem('markers', JSON.stringify(markers));
+  }
+
+  removeMarker(marker){
+//Adjuntar marcadores
+
+    var markers = JSON.parse(localStorage.getItem('markers'));
+
+    for (var i = 0; i < markers.length; i++) {
+      if (marker.lat == markers[i].lat && marker.lng == markers[i].lng) {
+        markers.splice(i, 1);
+
+      }
+    }
+    localStorage.setItem('markers', JSON.stringify(markers));
+
+  }
+}
