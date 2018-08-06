@@ -3,7 +3,7 @@ import {MarkerService} from "../services/marker.service";
 @Component({
   selector: 'app-mapa',
   templateUrl: './mapa.component.html',
-  styleUrls: ['./mapa.component.css']
+  styleUrls: ['./mapa.component.css'],
   providers: [MarkerService]
 })
 export class MapaComponent implements OnInit {
@@ -22,12 +22,54 @@ export class MapaComponent implements OnInit {
   markerDraggable: string;
   //Marcadores
   markers: marker[];
-  constructor(private _markerService:MarkerService) { 
+  constructor(private _markerService:MarkerService) {
   this.markers = this._markerService.getMarkers();
 }
+
+  addMarker(){
+    console.log("Adding Marker");
+    if(this.markerDraggable == 'yes'){
+      var isDraggable = true;
+
+    }else{
+      var isDraggable = false;
+
+    }
+
+    var newMarker = {
+      name:this.markerName,
+      lat: parseFloat(this.markerLat),
+      lng: parseFloat(this.markerLng),
+      draggable: isDraggable
+    }
+
+    this.markers.push(newMarker);
+    this._markerService.addMarker(newMarker);
+  }
+
+  removeMarker(marker){
+    console.log('Elminando marcador...');
+
+    for (var i = 0; i < this.markers.length; i++){
+      if (marker.lat == this.markers[i].lat && marker.lng == this.markers[i].lng){
+        this.markers.splice(i, 1);
+      }
+    }
+
+    this._markerService.removeMarker(marker);
+  }
+
 
 
   ngOnInit() {
   }
 
+}
+//Tipo de marcador
+
+interface marker{
+  name?:string;
+  lat: number;
+  lng: number;
+  draggable: boolean;
 }

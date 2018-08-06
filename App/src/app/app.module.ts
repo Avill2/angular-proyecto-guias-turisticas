@@ -9,6 +9,8 @@ import { RegistroComponent } from './registro/registro.component';
 import { ForgotpassComponent } from './forgotpass/forgotpass.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { SeleccionComponent } from './seleccion/seleccion.component';
+import { CommonModule } from '@angular/common';
+
 import {Router, RouterModule} from "@angular/router";
 import {routes} from "./app.routes";
 import { CostaComponent } from './costa/costa.component';
@@ -22,6 +24,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ResetpassComponent } from './resetpass/resetpass.component';
 import { BarraSuperiorComponent } from './barra-superior/barra-superior.component';
 import {MatToolbarModule} from '@angular/material';
+import {AgmCoreModule} from "@agm/core";
 import { MapaComponent } from './mapa/mapa.component';
 
 
@@ -53,6 +56,9 @@ import { MapaComponent } from './mapa/mapa.component';
     BrowserAnimationsModule,
     MatToolbarModule,
 
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyB_XEjdPLa-HHR3YGW-mM_EI9epPB5FVck'
+    })
   ],
   providers: [
     SpeechRecognitionService

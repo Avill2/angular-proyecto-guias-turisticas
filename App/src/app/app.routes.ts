@@ -11,6 +11,7 @@ import {OrienteComponent} from './oriente/oriente.component';
 import {GalapagosComponent} from './galapagos/galapagos.component';
 import {ForgotpassComponent} from './forgotpass/forgotpass.component';
 import {ResetpassComponent} from './resetpass/resetpass.component';
+import {MapaComponent} from "./mapa/mapa.component";
 
 
 export const routes: Routes = [
@@ -50,6 +51,11 @@ export const routes: Routes = [
     path: 'resetpass',
     component: ResetpassComponent
   },
+  {
+    path: 'mapa',
+    component: MapaComponent
+  },
+
   {
     path: '**',
     redirectTo : '/login'
