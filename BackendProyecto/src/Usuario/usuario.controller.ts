@@ -16,7 +16,7 @@ export class UsuarioController {
         return response.send(usuarios);
     }
   @Get('/:correo/:password')
-  async buscarPorNombre(
+    async getUsuarioPorCorreo(
     @Param() paramParams,
     @Res() response,
   ) {

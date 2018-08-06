@@ -20,6 +20,7 @@ import {SpeechRecognitionService} from './speech-recognition.service';
 import {UsuarioService} from './Servicios/usuario.service';
 import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ResetpassComponent } from './resetpass/resetpass.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     SierraComponent,
     OrienteComponent,
     GalapagosComponent,
+    ResetpassComponent,
 
   ],
   imports: [
