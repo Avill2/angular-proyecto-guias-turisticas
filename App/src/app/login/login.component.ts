@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {UsuarioService} from '../Servicios/usuario.service';
 import {Router} from '@angular/router';
+import {SpeechRecognitionService} from '../speech-recognition.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -8,14 +9,16 @@ import {Router} from '@angular/router';
   providers: [UsuarioService]
 })
 export class LoginComponent implements OnInit {
-
+  title = 'login';
   correo: string = '';
   password: string = '';
   respuesta;
   constructor(private _usuarioService: UsuarioService,
-              private _router: Router) {
+              private _router: Router, private speech: SpeechRecognitionService) {
     this.correo = '';
-    this.password = '';
+    this.password = '1234';
+    this.speech.record('es_ES')
+      .subscribe(e => this.title = e);
   }
   ngOnInit() {
   }

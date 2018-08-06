@@ -34,7 +34,7 @@ export class UsuarioService {
 
   async obtenerUsuarioPorCorreo(correo) {
     return await this.usuarioRepository.
-    createQueryBuilder("usuario").where("usuario.correo = :correo", { correo: correo }).getOne();
+    createQueryBuilder("usuario").where("usuario.nombre = :nombre", { nombre: correo }).getOne();
   }
 
   async obtenerUsuarioPorId(id_usuario) {

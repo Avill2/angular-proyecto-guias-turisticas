@@ -15,12 +15,12 @@ export class UsuarioController {
         const usuarios = await this._usuarioService.traerTodos();
         return response.send(usuarios);
     }
-  @Get('/:correo/:password')
+  @Get('/:nombre/:password')
     async getUsuarioPorCorreo(
     @Param() paramParams,
     @Res() response,
   ) {
-    const usuario = await this._usuarioService.obtenerUsuarioPorCorreo(paramParams.correo);
+    const usuario = await this._usuarioService.obtenerUsuarioPorCorreo(paramParams.nombre);
 
     if (usuario.password === paramParams.password) {
       return response.send(

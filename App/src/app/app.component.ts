@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {SpeechRecognitionService} from './speech-recognition.service'
+import {SpeechRecognitionService} from './speech-recognition.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,9 +8,9 @@ import {SpeechRecognitionService} from './speech-recognition.service'
 })
 export class AppComponent {
   title = 'app';
-  constructor(private speech: SpeechRecognitionService){
+  constructor(private speech: SpeechRecognitionService) {
     this.speech.record('es_ES')
-      .subscribe(e => this.title = e)
+      .subscribe(e => this.title = e);
   }
 
 

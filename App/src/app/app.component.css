@@ -20,7 +20,7 @@ ul#menu li:hover{
 ul#menu ul {
   display: none;
   position: absolute;
-  top: -95px;
+  top: 28px;
   background: #333;
   color: #fff;
   padding: 2px 0px 2px 0px;
