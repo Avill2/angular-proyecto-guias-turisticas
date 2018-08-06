@@ -22,6 +22,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ResetpassComponent } from './resetpass/resetpass.component';
 import { BarraSuperiorComponent } from './barra-superior/barra-superior.component';
 import {MatToolbarModule} from '@angular/material';
+import { MapaComponent } from './mapa/mapa.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import {MatToolbarModule} from '@angular/material';
     GalapagosComponent,
     ResetpassComponent,
     BarraSuperiorComponent,
+    MapaComponent,
 
   ],
   imports: [
