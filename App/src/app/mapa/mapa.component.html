@@ -24,6 +24,21 @@
     </agm-info-window>
 
   </agm-marker>
+
+  
+  <agm-polyline
+    [visible]="true"
+    [strokeWeight]="3">
+
+    <agm-polyline-point
+      *ngFor="let coordinate of markers; let i=index"
+      [latitude]="coordinate.lat"
+      [longitude]="coordinate.lng">
+
+    </agm-polyline-point>
+
+
+  </agm-polyline>
 </agm-map>
 
 <div align="center" class="row">
@@ -61,4 +76,6 @@
     </div>
 
   </div>
+
+
 </div>
