@@ -15,12 +15,13 @@ import { CostaComponent } from './costa/costa.component';
 import { SierraComponent } from './sierra/sierra.component';
 import { OrienteComponent } from './oriente/oriente.component';
 import { GalapagosComponent } from './galapagos/galapagos.component';
-
 import {SpeechRecognitionService} from './speech-recognition.service';
 import {UsuarioService} from './Servicios/usuario.service';
 import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ResetpassComponent } from './resetpass/resetpass.component';
+import { BarraSuperiorComponent } from './barra-superior/barra-superior.component';
+import {MatToolbarModule} from '@angular/material';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { ResetpassComponent } from './resetpass/resetpass.component';
     OrienteComponent,
     GalapagosComponent,
     ResetpassComponent,
+    BarraSuperiorComponent,
 
   ],
   imports: [
@@ -47,6 +49,7 @@ import { ResetpassComponent } from './resetpass/resetpass.component';
       {
         useHash: false}),
     BrowserAnimationsModule,
+    MatToolbarModule,
 
   ],
   providers: [

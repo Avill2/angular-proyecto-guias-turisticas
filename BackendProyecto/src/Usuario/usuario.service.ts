@@ -37,4 +37,8 @@ export class UsuarioService {
     createQueryBuilder("usuario").where("usuario.correo = :correo", { correo: correo }).getOne();
   }
 
+  async obtenerUsuarioPorId(id_usuario) {
+    return await this.usuarioRepository.find({where: {id_usuario: id_usuario}})
+  }
+
 }

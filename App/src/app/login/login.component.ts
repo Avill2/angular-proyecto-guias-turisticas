@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   password: string = '';
   respuesta;
   constructor(private _usuarioService: UsuarioService,
-              private _router: Router){
+              private _router: Router) {
     this.correo = '';
     this.password = '';
   }

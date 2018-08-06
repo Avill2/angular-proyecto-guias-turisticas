@@ -15,11 +15,11 @@ import {ResetpassComponent} from './resetpass/resetpass.component';
 
 export const routes: Routes = [
   {
-    path: 'inicio',
-    component: SeleccionComponent},
-  {
     path: 'login',
     component: LoginComponent},
+  {
+    path: 'inicio/:idUsuarioActual',
+    component: SeleccionComponent},
   {
     path: 'recepcion-hotel',
     component: RecepcionHotelComponent},
@@ -52,5 +52,5 @@ export const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo : '/inicio'
+    redirectTo : '/login'
   }]

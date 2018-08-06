@@ -1,15 +1,41 @@
 import {Component} from '@angular/core';
+import {UsuarioService} from '../Servicios/usuario.service';
+import {ActivatedRoute, Router} from '@angular/router';
+import {Usuario} from '../Interfaces/usuario';
 
 @Component({
   selector: 'app-seleccion',
   templateUrl: './seleccion.component.html',
   styleUrls: [
     './seleccion.component.css'
-  ]
+  ],
+  providers: [UsuarioService],
 })
 export class SeleccionComponent {
 
+  usuarioActual: Usuario;
+  constructor(private _usuarioService: UsuarioService,
+              private _router: Router,
+              private _activatedRoute: ActivatedRoute
+  ) {
+    this._activatedRoute.params.subscribe(
+      params => {
+        this.getUsuarioPorId(params['idUsuarioActual']);
+      });
+  }
 
+
+  ngOnInit() {
+    // Empezar la logica de la pantalla
+    console.log('On Init');
+  }
+  getUsuarioPorId(id_usuario) {
+    this._usuarioService.getUsuarioPorId(id_usuario).subscribe(
+      (result: any) => {
+        this.usuarioActual =  result[0];
+      }
+    );
+  }
   arregloUsuarios = [
     {
       id:1,

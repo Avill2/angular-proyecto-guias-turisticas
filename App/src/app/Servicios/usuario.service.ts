@@ -21,4 +21,8 @@ export class UsuarioService {
     let header = UsuarioService.getCommonHeaders();
     return this.http.get('http://localhost:1337/usuario/' + correo + '/' + password ,{headers: header});
   }
+  getUsuarioPorId(id_usuario) {
+    let header = UsuarioService.getCommonHeaders();
+    return this.http.get('http://localhost:1337/usuario/por/id_usuario/' + id_usuario ,{headers: header});
+  }
 }

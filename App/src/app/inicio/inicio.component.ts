@@ -1,12 +1,16 @@
 import {Component, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output} from '@angular/core';
+import {Usuario} from '../Interfaces/usuario';
+import {UsuarioService} from '../Servicios/usuario.service';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css']
-})
-export class InicioComponent implements OnInit, OnDestroy, OnChanges {
-
+  styleUrls: ['./inicio.component.css'],
+  providers: [UsuarioService], }
+)
+export class InicioComponent implements OnInit{
+  usuarioActual: Usuario;
   @Input()  imagen: string;
   @Input() texto: string;
   @Output() selecciono: EventEmitter<string>
@@ -18,18 +22,16 @@ export class InicioComponent implements OnInit, OnDestroy, OnChanges {
   // EVENTO del web component
   @Output() cambioElContador = new EventEmitter();
 
-  constructor() {
-    // Configuracion de servicios (providers) u otras configuraciones
-    console.log('Constructor');
+  constructor(private _usuarioService: UsuarioService,
+              private _router: Router,
+              private _activatedRoute: ActivatedRoute
+  ) {
+    this._activatedRoute.params.subscribe(
+      params => {
+        this.getUsuarioPorId(params['idUsuarioActual']);
+      });
   }
 
-  aumentarContador() {
-
-    this.contador = this.contador + 1;
-
-    this.cambioElContador
-      .emit(this.contador);
-  }
 
   ngOnInit() {
     // Empezar la logica de la pantalla
@@ -38,16 +40,11 @@ export class InicioComponent implements OnInit, OnDestroy, OnChanges {
 
     console.log('Contador: ', this.contador);
   }
-
-  ngOnDestroy() {
-    console.log('On Destroy');
+  getUsuarioPorId(id_usuario) {
+    this._usuarioService.getUsuarioPorId(id_usuario).subscribe(
+      (result: any) => {
+        this.usuarioActual =  result[0];
+      }
+    );
   }
-
-  ngOnChanges(cambios) {
-    console.log('On Changes', cambios);
-  }
-
-  seleccionoUsuario() {
-    console.log('Selecciono', this.texto);
-    this.selecciono.emit(this.texto);
-  }}
+}

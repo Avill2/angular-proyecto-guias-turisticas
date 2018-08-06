@@ -5,15 +5,19 @@ import {SeleccionComponent} from './seleccion.component';
 import {FormsModule} from "@angular/forms";
 
 import { InicioComponent } from '../inicio/inicio.component';
+import {BarraSuperiorComponent} from '../barra-superior/barra-superior.component';
+import {MatToolbarModule} from '@angular/material';
 
 @NgModule({
   declarations: [ // Componentes
     SeleccionComponent,
-    InicioComponent
+    InicioComponent,
+    BarraSuperiorComponent
   ],
   imports: [ // Modulos
     BrowserModule, // ngIf ngFor
-    FormsModule // NgModel
+    FormsModule, // NgModel
+    MatToolbarModule,
   ],
   providers: [ // Servicios
 

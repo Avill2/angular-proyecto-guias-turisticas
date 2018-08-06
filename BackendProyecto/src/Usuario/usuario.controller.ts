@@ -34,7 +34,14 @@ export class UsuarioController {
       );
     }
   }
-
+  @Get('por/id_usuario/:id_usuario')
+  async obtenerUsuarioPorId(
+    @Param() paramParams,
+    @Res() response,
+  ) {
+    const usuario = await this._usuarioService.obtenerUsuarioPorId(paramParams.id_usuario);
+    return response.send(usuario);
+  }
   @Post()
   async crearUsuariosBase() {
     const usuarios = this._usuarioService.crearUsuario();
