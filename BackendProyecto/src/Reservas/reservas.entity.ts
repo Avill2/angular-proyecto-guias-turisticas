@@ -1,5 +1,6 @@
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { UsuarioEntity } from '../Usuario/usuario.entity';
+import { DetallereservaEntity } from '../DetalleReservas/detallereservas.entity';
 
 @Entity('Reservas')
 export class ReservasEntity {
@@ -10,5 +11,7 @@ export class ReservasEntity {
     @Column({length: 10})
     fecha_fin: string;
     @ManyToOne(type => UsuarioEntity, usuarioEntity => usuarioEntity.reserva)
-    usuario: UsuarioEntity;
+    usuarioId: ReservasEntity;
+    @OneToMany(type => DetallereservaEntity, detallesReservaEntity => detallesReservaEntity.detallesReservas)
+    detalleReservaId: ReservasEntity[];
 }

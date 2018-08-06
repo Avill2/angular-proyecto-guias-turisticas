@@ -1,6 +1,6 @@
 
-import {Injectable} from "@angular/core";
-import {HttpClient, HttpHeaders} from "@angular/common/http";
+import {Injectable} from '@angular/core';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 
 @Injectable()
 export class UsuarioService {
@@ -17,23 +17,8 @@ export class UsuarioService {
     return headers;
   }
 
-  getUsuarios() {
+  getUsuarioPorCorreo(correo, password) {
     let header = UsuarioService.getCommonHeaders();
-    return this.http.get("http://localhost:1337/usuario",{headers: header});
-  }
-
-  getUsuariosPorNombre(nombre, contrasena) {
-    let header = UsuarioService.getCommonHeaders();
-    return this.http.get("http://localhost:1337/usuario/" + nombre + "/" + contrasena ,{headers: header});
-  }
-
-  getUsuariosBusqueda(parametroBusqueda) {
-    let header = UsuarioService.getCommonHeaders();
-    return this.http.get("http://localhost:1337/usuario/" + parametroBusqueda ,{headers: header});
-  }
-
-  getUsuarioPorId(idUsuario){
-    let header = UsuarioService.getCommonHeaders();
-    return this.http.get("http://localhost:1337/usuario/por/id/" + idUsuario ,{headers: header});
+    return this.http.get('http://localhost:1337/Usuario/' + correo + '/' + password ,{headers: header});
   }
 }

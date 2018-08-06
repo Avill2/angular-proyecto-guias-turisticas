@@ -1,4 +1,4 @@
-/*import {Injectable} from '@nestjs/common';
+import {Injectable} from '@nestjs/common';
 import {InjectRepository} from '@nestjs/typeorm';
 import {UsuarioEntity} from './usuario.entity';
 import {Like, Repository} from 'typeorm';
@@ -28,8 +28,13 @@ export class UsuarioService {
         return this.usuarioRepository.find();
     }
 
-    crearusuariodesdebase(usuarios: UsuarioEntity): UsuarioEntity {
-        this.listaUsuarios.push(usuarios);
-        return this.listaUsuarios;
-    }
-}*/
+  async traerTodos(): Promise<UsuarioEntity[]> {
+    return await this.usuarioRepository.find();
+  }
+
+  async obtenerUsuarioPorCorreo(correo) {
+    return await this.usuarioRepository.
+    createQueryBuilder("usuario").where("usuario.correo = :correo", { correo: correo }).getOne();
+  }
+
+}

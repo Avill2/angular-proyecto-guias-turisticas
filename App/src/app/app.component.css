@@ -1,6 +1,6 @@
 ul#menu {
   background: #333;
-  width: 940px;
+  width: 900px;
   float:left;
   padding: 5px;
 }
@@ -9,7 +9,7 @@ ul#menu li {
   color: #fff;
   float: left;
   list-style: none;
-  margin: 0% 5%;
+  margin: 0% 4%;
 }
 
 ul#menu li:hover{
@@ -20,10 +20,10 @@ ul#menu li:hover{
 ul#menu ul {
   display: none;
   position: absolute;
-  top: 49px;
+  top: -95px;
   background: #333;
   color: #fff;
-  padding: 5px 0px 5px 5px;
+  padding: 2px 0px 2px 0px;
   margin: 0;
 }
 
@@ -31,7 +31,7 @@ ul#menu ul li{
   float: left;
   color: #fff;
   width:100%;
-  margin:2% 0%;
+  margin:0% 0%;
 }
 
 
@@ -69,7 +69,7 @@ ul.topnav li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 8px 8px;
   text-decoration: none;
 }
 ul.topnav li a:hover:not(.active) {background-color: #111;}
@@ -78,7 +78,7 @@ ul.topnav li a.active {background-color: #4CAF50;}
 
 ul.topnav li.right {float: right;}
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1200px){
   ul.topnav li.right,
   ul.topnav li {float: none;}
 }

@@ -17,6 +17,9 @@ import { OrienteComponent } from './oriente/oriente.component';
 import { GalapagosComponent } from './galapagos/galapagos.component';
 
 import {SpeechRecognitionService} from './speech-recognition.service';
+import {UsuarioService} from './Servicios/usuario.service';
+import {HttpClientModule} from '@angular/common/http';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -37,9 +40,12 @@ import {SpeechRecognitionService} from './speech-recognition.service';
   ],
   imports: [
     BrowserModule,
-    FormsModule,RouterModule.forRoot(routes,
+    HttpClientModule,
+    FormsModule, RouterModule.forRoot(routes,
       {
-        useHash: false})
+        useHash: false}),
+    BrowserAnimationsModule,
+
   ],
   providers: [
     SpeechRecognitionService

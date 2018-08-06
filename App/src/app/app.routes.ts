@@ -47,5 +47,5 @@ export const routes: Routes = [
     component: ForgotpassComponent},
   {
     path: '**',
-    redirectTo :'login'
+    redirectTo : '/inicio'
   }]

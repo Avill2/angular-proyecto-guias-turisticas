@@ -15,6 +15,6 @@ export class UsuarioEntity {
     password: string;
     @Column({length: 30})
     correo: string;
-    @OneToMany(type => ReservasEntity, reservasEntity => reservasEntity.usuario)
+    @OneToMany(type => ReservasEntity, reservasEntity => reservasEntity.usuarioId)
     reserva: ReservasEntity[];
 }

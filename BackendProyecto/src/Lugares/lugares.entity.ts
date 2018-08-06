@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import { DetallereservaEntity } from '../DetalleReservas/detallereservas.entity';
 
 @Entity('Lugares')
 export class LugaresEntity {
@@ -10,4 +11,6 @@ export class LugaresEntity {
     ubicacion_lugar: string;
     @Column({length: 3})
     horario_lugar: string;
+    @OneToMany(type => DetallereservaEntity, detallesReservaEntity => detallesReservaEntity.Lugares)
+    detalles: LugaresEntity[];
 }

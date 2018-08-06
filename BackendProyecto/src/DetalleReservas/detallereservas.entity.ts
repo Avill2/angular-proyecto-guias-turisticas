@@ -13,11 +13,9 @@ export class DetallereservaEntity {
     fecha: string;
     @Column({length: 30})
     hora: string;
-    @ManyToOne(type => ReservasEntity)
-    @JoinColumn()
-    Reservas: ReservasEntity[];
-    @ManyToOne(type1 => LugaresEntity)
-    @JoinColumn()
-    Lugares: LugaresEntity[];
+    @ManyToOne(type => ReservasEntity, detalleRserva => detalleRserva.detalleReservaId)
+    detallesReservas: ReservasEntity;
+    @ManyToOne(type => LugaresEntity, lugar => lugar.detalles)
+    Lugares: LugaresEntity;
 
 }
